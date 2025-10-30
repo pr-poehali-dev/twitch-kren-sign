@@ -7,9 +7,13 @@ const Index = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
       
       <div className="relative z-10 max-w-4xl w-full">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 relative">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent animate-scan-line"></div>
+          </div>
+          
           <h1 
-            className="text-8xl md:text-9xl font-black tracking-wider mb-4 animate-neon-glow text-primary uppercase"
+            className="text-8xl md:text-9xl font-black tracking-wider mb-4 animate-glitch text-primary uppercase relative"
             style={{
               fontFamily: 'Arial Black, sans-serif',
               WebkitTextStroke: '2px hsl(var(--primary))',
